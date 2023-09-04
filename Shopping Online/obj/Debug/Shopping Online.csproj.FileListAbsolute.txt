@@ -1,0 +1,16 @@
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\bin\Debug\Shopping Online.exe.config
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\bin\Debug\Shopping Online.exe
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\bin\Debug\Shopping Online.pdb
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping Online.csproj.AssemblyReference.cache
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping Online.csproj.SuggestedBindingRedirects.cache
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping_Online.Home.resources
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping_Online.Properties.Resources.resources
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping Online.csproj.GenerateResource.cache
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping Online.csproj.CoreCompileInputs.cache
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping Online.exe
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping Online.pdb
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping_Online.Cart.resources
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping_Online.Login.resources
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping_Online.Register.resources
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping_Online.Item.resources
+C:\Users\phung\OneDrive\Máy tính\Shopping Online\Shopping Online\obj\Debug\Shopping_Online.Personal.resources

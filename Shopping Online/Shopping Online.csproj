@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61440F99-097D-42DF-81FE-32C86080F8BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Shopping_Online</RootNamespace>
+    <AssemblyName>Shopping Online</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\HOADONDAO.cs" />
+    <Compile Include="DAO\SANPHAMDAO.cs" />
+    <Compile Include="DTO\SANPHAM.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item.Designer.cs">
+      <DependentUpon>Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal.Designer.cs">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item.resx">
+      <DependentUpon>Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal.resx">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1564506_close_exit_logout_power_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326700_cart_shopping_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple-Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1564534_customer_man_user_account_profile_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326606_delete_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1564534_customer_man_user_account_profile_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple-Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\326606_delete_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airpods 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_images_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airpods 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airpods Max.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airpods Pro 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airpods Pro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ipad Air 4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ipad Air 5 M1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ipad Gen 9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ipad Gen 10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ipad Pro 11 inch 2020.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ipad Pro 11 inch 2021 %28M1%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ipad Pro 11 inch 2022 %28M2%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ipad Pro 12.9 inch 2021 %28M1%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ipad Pro 12.9 inch 2022 %28M2%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 11 Pro Max.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 12 Mini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 12 Pro Max.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 12 Pro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 13 Mini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 13 Pro Max.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 13 Pro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 14 Plus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 14 Pro Max.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 14 Pro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone 14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone SE 2020.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iphone SE 2022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Macbook Air M1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Macbook Air M2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Macbook Pro 14 inch %28M1 Max%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Macbook Pro 14 inch %28M1 Pro%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Macbook Pro 16 inch %28M1 Max%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Macbook Pro 16 inch %28M1 Pro%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Macbook Pro M1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
